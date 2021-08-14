@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background: rgb(93, 90, 71);
+
+}
+.main-box {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top:35%;
+	animation: box-animate 1s linear infinite;
+	transform: rotate(45deg);
+}
+.main-box div {
+	width: 97px;
+	height: 97px;
+	position: absolute;
+	border-radius: 8px;
+	animation: div-animate 2s linear infinite;
+}
+.main-box div:nth-child(1){
+    left: 0;
+    top: 0;
+    background: url(./my-pictur.jpg)no-repeat top center;
+    background-size: cover;
+}
+.main-box div:nth-child(2){
+    right: 0;
+    top: 0;
+    background: url(./my-pictur.jpg)no-repeat top center;
+    background-size: cover;
+}
+.main-box div:nth-child(3){
+    left: 0;
+    bottom: 0;
+    background: url(./my-pictur.jpg)no-repeat top center;
+    background-size: cover;
+}
+.main-box div:nth-child(4){
+    right: 0;
+    bottom: 0;
+    background: url(./my-pictur.jpg)no-repeat top center;
+    background-size: cover;
+}
+
+@keyframes box-animate{
+    50%{
+        width: 250px;
+        height: 250px;
+    }
+}
+@keyframes div-animate{
+   50%{
+        transform: rotate(360deg);
+        box-shadow: 2px 2px 33px 19px rgb(255, 230, 0);
+    }
+    100%{transform: rotate(360deg);}
+}

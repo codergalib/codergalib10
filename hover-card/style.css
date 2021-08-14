@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    width: 600px;
+    border: 5px solid red;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+.card img{
+    max-width: 100%;
+    margin-bottom: -5px;
+    
+}
+.card-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    text-align: center;
+    
+     
+}
+
+.card-text{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: rgba(0, 0, 0, 0.705);
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: .6s ease-in-out;
+}
+.card:hover .card-text{
+         left: 0;
+
+      
+}
+
+.card-text h2 {
+    color: red;
+    padding: 0px 0;
+    text-transform: uppercase;
+    font-size: 34px;
+    text-shadow: 3px 3px 3px aqua;
+    text-align: center;
+}
+.card-text p {
+    color: aquamarine;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    text-shadow: 1px 1px 4px cornflowerblue;
+    border-top: 20px solid rgba(255, 0, 0, 0.459);
+    border-bottom: 20px solid rgba(255, 0, 0, 0.459);
+    padding: 19px 0;
+    margin-bottom: 4px;
+    border-radius: 50%;
+    background: #0000ff47;
+}
+
+.my-btn {
+    background: red;
+    display: inline-block;
+    padding: 10px 53px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    font-weight: 900;
+    
+    
+ }
+ .my-btn::before{
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     background: black;
+     border-radius: 5px;
+     height: 0%;
+     width: 100%;
+     z-index: -1;
+     transition: .5s ease-in-out;
+     
+ }
+ .my-btn:hover::before{
+     height: 100%;
+     
+     
+ }
+
